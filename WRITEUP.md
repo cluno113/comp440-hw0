@@ -1,7 +1,7 @@
 # HW0 writeup
 
-**Name:** XXXX
-**Date:** XXXX
+**Name:** Claire Kuno
+**Date:** 2026-09-12
 
 Replace every placeholder below with your answer. Every number you give comes from a script in this repo; say which one.
 
