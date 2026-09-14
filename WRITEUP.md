@@ -11,23 +11,24 @@ Code: `human_part1.py`. One or two sentences per answer, with the numbers.
 
 **(a) How many ratings, users, and movies are there, and how are ratings distributed across 1–5 stars?**
 
-XXXX
+The code takes ratings data set and counts the number of ratings before sorting them 1-5. 
+Then, creates a four loop that displays each star rating and the count attributed to it.
 
 **(b) What is the median number of ratings per user, and how many users have 100 or more ratings?**
 
-XXXX
+This groups the ratings by user_id and looks at what users have 100 or more ratings with the median of the how many ratings users make. 
 
 **(c) Which 10 movies have the most ratings?**
 
-XXXX
+The code joins movies_df with ratings_df by movie_id. Then, groups ratings by title and arranges it to see which 10 movies have the most ratings.
 
 **(d) Among movies with at least 20 ratings, which 10 have the highest mean rating?**
 
-XXXX
+By filtering ratings_df's movies (grouped by 'movie_id) to see which movies have at least 20 ratings, the code takes the mean rating for each of the top 10 movies and counts the number of ratings for each movie.
 
 **Anything you got stuck on (what you tried, where it broke), or "none":**
 
-XXXX
+I was ready to code, but then my copilot tried it for me. So, I went through what it did and broke it down to do every step of wrangling on a separate line. 
 
 ## Part 2. The best movie
 
