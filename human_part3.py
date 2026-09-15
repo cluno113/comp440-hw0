@@ -13,10 +13,20 @@ from load_data import load_all
 
 def top5_my_definition(ratings, ratings_df, movies, movies_df):
     print("== My definition ==")
-
-
+    # Movies that are the most warming according to my definition:
+    # movies_df.info()
+    warming_movies = movies_df[
+        (movies_df["Children's"] == 1) |
+        (movies_df["Musical"] == 1) |
+        (movies_df["Romance"] == 1)
+    ]
+    warming_ratings = ratings_df.merge(warming_movies[['movie_id', 'title']], on='movie_id') \
+    .groupby(['movie_id', 'title']).agg({'rating': ['mean', 'count']}) \
+    .sort_values(('rating', 'mean'), ascending=False)
+    warming_ratings = warming_ratings.reset_index()
+    print(warming_ratings.head(5)[["title"]])
+    
 def human_part3(ratings, ratings_df, movies, movies_df):
-    print("part 3 unimplemented")  # delete this line when you start
     top5_my_definition(ratings, ratings_df, movies, movies_df)
 
 

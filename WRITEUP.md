@@ -34,36 +34,42 @@ I was ready to code, but then my copilot tried it for me. So, I went through wha
 
 Code: `human_part2.py`.
 
-**My rule:** XXXX
+**My rule:** 
+Movies with the a rating higher than 4.0 and top 10 movies with the highest ratings.
 
-**One rule I considered and rejected, and why:** XXXX
+**One rule I considered and rejected, and why:** 
+I considered looking at the highest rated movies, but when I ran the code, I realized that some movies had only 1 rating. One person enjoying a movie doesn't make it the best movie of all time.
 
 **Top 10 under my rule:**
-
-XXXX
+My rule makes a dataframe that filters for movies with a rating higher than 4, then arranges the rating count (number of user ratings) into an ascending order.
 
 **Why my rule, in at most 150 words. Name one thing it gains and one thing it loses:**
-
-XXXX
+My rule makes sense to me because it is considering the popularity of movies and the rating of the popular movies. I looked at the results from part 1 and personally agreed with the results of 'Which 10 movies had the most ratings' and 'Among movies with at least 20 ratings, which have the highest mean rating?'. It made me want to pull from these prompts and create a list that fits better with my movie familiarity. I experimented with looking at what movies had the highest rating, and how many ratings popular movies had. By combining these two aspects, I feel good at the list of 10 I conjured for this portion of the homework.
 
 ## Part 3. The most ___ movie
 
 Code: `human_part3.py`.
 
-**My adjective:** XXXX
+**My adjective:** 
+Warming
 
-**My definition** (one sentence, precise enough that a classmate could code it)**:** XXXX
+**My definition** (one sentence, precise enough that a classmate could code it)**:** 
+Movies that are feel good in a comforting way. 
 
-**One definition I considered and rejected, and why:** XXXX
+**One definition I considered and rejected, and why:** 
+I considered the definition exciting, but that adjective is too subjective and not descriptive enough to capture a movie genre. 
 
 **Top 5 under my definition:**
 
-XXXX
+0                  Star Kid (1997)
+1                Casablanca (1942)
+2                 Star Wars (1977)
+3                   Titanic (1997)
+4  Empire Strikes Back, The (1980)
 
-**What your definition captures, what it misses, and where "___-ness" lives in this data — the
-genre labels, what the crowd did, or the words in the titles. At most 150 words:**
+**What your definition captures, what it misses, and where "___-ness" lives in this data — the genre labels, what the crowd did, or the words in the titles. At most 150 words:**
 
-XXXX
+My definition captures movies that weren't made to scare you or feel bad in anyway. I think it brings up lists of movies that are exciting in joy, not in thrill or fear. Warmness lives in this data through the Romance, Children's, and Musical labels and the high ratings make them movies that people enjoy. 
 
 ## Part 4. Claude's answers
 
@@ -111,7 +117,7 @@ XXXX
 **What you asked Claude for during Parts 1–3** (debugging and installing only — say what you
 got stuck on)**:**
 
-XXXX
+I asked Claude for 
 
 **Something Claude said that you could not verify, and why. Or "none," and how you checked:**
 
