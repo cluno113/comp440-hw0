@@ -129,65 +129,67 @@ My definition captures movies that weren't made to scare you or feel bad in anyw
 
 ## Part 4. Claude's answers
 
-Claude answers the same three questions in `claude_answers_1_2_3.py`, without seeing your code
-or your answers.
+Claude answers the same three questions in `claude_answers_1_2_3.py`, without seeing your code or your answers.
 
 **Did its numbers for Part 1 match yours? If not, which, and what did you find?**
 
-XXXX
+Yes, they all matched except I didn't calculate the percentages of ratings in each star. 
 
 ## Part 5. Comparing the best movie
 
 **Claude's rule:**
 
-XXXX
+— raw mean is misleading with a 20-rating floor, so I used a Bayesian-shrinkage weighted score (IMDb-style) pulling each movie's mean toward the global average by an amount that shrinks as evidence grows. Winner: **Schindler's List (1993)** (mean 4.47 over 298 ratings, weighted score 4.39), edging out **Shawshank Redemption** and **Casablanca**.
 
 **Read what Claude wrote about its rule. Does it anywhere admit the rule was a choice, and that a different rule was possible? Or does it give its answer as simply the answer? Quote the sentence that decides it:**
 
-XXXX
+Claude admits their rule was a choice: "I used a Bayesian-shrinkage weighted score (IMBDb-style) pulling each movie's mean toward the global average by an amount that shrinks as evidence grows". 
 
 **Your Part 2 top 10 and Claude's Part 2 top 10 — not the Part 1(d) lists. Where do they differ, and why?**
 
-XXXX
+I filtered for movies with a rating higher than 4.0 and picked the top 10 with the most number of ratings. Claude used a method that took the mean of each movie's rating. They differ completely in the method that was used to capture a high rating.
+
 
 **Better for what purpose? Name a situation where your rule is the right one and a situation where Claude's is. At most 150 words. You may conclude yours, its, or neither:**
 
-XXXX
+I believe Claude's method is nice in that it captures movies with even small numbers of very high rating. So, it would be good for a real cinephile. While mine considers popularity in choosing the best movie as I consider more ratings to be a component in deciphering the 'best' movie. 
 
 ## Part 6. Comparing the most ___ movie
 
 **Claude's definition:**
 
-XXXX
+Since "warming" isn't a data column, I operationalized it as movies with a warm-leaning genre(Comedy, Romance, Children's, Animation, Musical) and none of the dark genres (Horror, Crime, War, Thriller, Film-Noir), then ranked by mean rating among those with ≥20 ratings. Winner: **The Wrong Trousers (1993)** (mean 4.47, Wallace & Gromit's claymation follow-up), just ahead of **Wallace & Gromit: The Best of Aardman Animation**.
 
 **Is Claude's film in your top 5?**
 
-XXXX
+No, it was not. 
 
 **What Claude's definition sees that yours does not, and the reverse. At most 150 words:**
 
-XXXX
+My part 2 top 10 was under a definition I set for myself. I only included warming-leaning genres (Comedy, Romance, and Musical), unlike Claude which included additional Comedy and Animation genres. I also ranked the mean ratings over 4.0 and picked the top 5 movies with the highest number of ratings.
 
 ## Working with Claude
 
-**What you asked Claude for during Parts 1–3** (debugging and installing only — say what you
-got stuck on)**:**
+**What you asked Claude for during Parts 1–3** **(debugging and installing only — say what you got stuck on)**
 
-I asked Claude for 
+I asked Claude to list the steps I needed to take to accomplish this homework. I also asked it to read errors in my code!
 
 **Something Claude said that you could not verify, and why. Or "none," and how you checked:**
 
-XXXX
+Claude could not verify my definition of 'best movie' and could not show me the structural connections between the datasets I created. This came up when I was trying to merge and join things I created for my failed attempts at 'best warming movies'. 
 
 **What you would do differently next time, in 3–5 sentences:**
 
-XXXX
+I would disable Co-Pilot before I started the activity and think about more creative ways I can measure things like 'best'. I think I was limiting myself to the examples from parts 1 through 3. 
 
-**Where did this assignment slow you down for a reason that was its fault, not yours? Point at
-the step. Or "nowhere." One or two sentences:**
+**Where did this assignment slow you down for a reason that was its fault, not yours? Point at the step. Or "nowhere." One or two sentences:**
 
-XXXX
+I slowed down during the wrangling of the data in Parts 1 through 3. It was my fault because it has been a while since I wrote script in Python. 
 
-**Hours spent:** XXXX
+**Hours spent:** 
 
-**Anyone who helped you, or "no one":** XXXX
+5 hours? 
+
+**Anyone who helped you, or "no one":** 
+
+"No one"
